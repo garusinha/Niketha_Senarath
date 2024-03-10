@@ -1,0 +1,278 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  box-sizing: border-box;
+}
+body {
+  min-height: 200vh;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  padding-left: 8px;
+  z-index: 100000;
+  font-weight: bold;
+  margin: auto;
+  background-color: rgba(0, 0, 0);
+}
+header.sticky {
+  padding: 5px 100px;
+  background: #8c998e;
+}
+header img {
+  width: 150px;
+}
+header ul {
+  font-family: Arial, Helvetica, sans-serif;
+  list-style: none;
+  padding-left: 20px;
+}
+header ul li {
+  display: inline-block;
+  position: relative;
+  font-size: 20px;
+}
+header ul li a:hover {
+  color: #ff7200;
+}
+header ul li a {
+  display: block;
+  margin: 0 15px;
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  letter-spacing: 2px;
+  font-weight: 500px;
+  transition: 0.5s;
+}
+header.sticky ul li a {
+  color: #000;
+}
+/*drop down menu................................*/
+header ul li ul.dropdown li {
+  display: block;
+  font-size: 15px;
+  line-height: 25px;
+  padding-top: 20px;
+}
+header ul li ul.dropdown {
+  width: 200px;
+  background: #000;
+  position: absolute;
+  z-index: 999;
+  display: none;
+}
+header ul li:hover ul.dropdown {
+  display: block;
+}
+/*header css code above this line..........................*/
+/*..............................................*/
+.imgcontainer {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+/*section 1 ....................................................*/
+.con1 {
+  padding-left: 8px;
+  padding-top: 0;
+  margin: 0;
+  padding-bottom: 20px;
+}
+span {
+  text-decoration: none;
+  color: #43a80a;
+  font-weight: 300;
+}
+.secondline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.why {
+  width: 1300px;
+  font-size: 16px;
+  margin: 0;
+  text-align: center;
+}
+.why span {
+  text-decoration: none;
+  color: #43a80a;
+  font-weight: bold;
+}
+.why h1 {
+  font-weight: bold;
+}
+.why p {
+  margin: 0;
+  color: #2b2626;
+  padding-top: 0px;
+  font-size: 23px;
+  text-align: justify;
+}
+.con2 {
+  padding-left: 150px;
+  margin: 0;
+  width: 1360px;
+}
+.thirdline p {
+  margin: 0;
+  color: #2b2626;
+  padding-top: 0px;
+  font-size: 20px;
+  text-align: justify;
+  padding-top: 20px;
+}
+.thirdline span {
+  text-decoration: none;
+  color: #43a80a;
+  font-weight: bold;
+}
+/*membership section1 below this..........................*/
+.cardevent {
+  margin-top: 40px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+.cardevent h1 {
+  padding-bottom: 30px;
+  color: #43a80a;
+  font-weight: bold;
+}
+.cardevent span {
+  text-decoration: none;
+  color: #0a2aa8;
+  font-weight: bold;
+  width: 100%;
+}
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+.card {
+  width: 20%;
+  background-color: #f7f5f4;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  margin: 20px;
+}
+.card img {
+  width: 100%;
+  height: auto;
+}
+.card-content {
+  padding: 16px;
+}
+.card-content h3 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+.card-content p {
+  color: #666;
+  font-size: 16px;
+  line-height: 1.3;
+}
+/* footer this line below....................................................*/
+footer {
+  width: 100%;
+  position: absolute;
+  bottom: auto;
+  background: linear-gradient(to right, #00093c, #2d0b00);
+  color: #fff;
+  padding: 50px 0 30px;
+  border-radius: 25px;
+  font-size: 13px;
+  line-height: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+.row {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.col {
+  flex-basis: 24%;
+}
+.footerlogo {
+  width: 150px;
+  margin-bottom: 0;
+}
+.col h2 {
+  width: fit-content;
+  margin-bottom: 40px;
+}
+ul li {
+  list-style: none;
+  margin-bottom: 12px;
+}
+ul li a {
+  text-decoration: none;
+  color: white;
+}
+form {
+  padding-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 50px;
+}
+form .far {
+  font-size: 18px;
+  margin-right: 10px;
+}
+form input {
+  width: 100%;
+  background: transparent;
+  color: #814d4d;
+  border: 0;
+  outline: none;
+}
+form button {
+  background: transparent;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+form button .fast {
+  font-size: 16px;
+  color: #ccc;
+}
+.social-icons .fa-brands {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  color: #000;
+  background: #f7f5f4;
+  margin-right: 15px;
+  cursor: pointer;
+}
+hr {
+  width: 90%;
+  border: 0;
+  border-bottom: 1px solid #ccc;
+  margin: 20px auto;
+}
+.copywrite {
+  text-align: center;
+}

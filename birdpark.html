@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Singapore nature of beauty</title>
+    <link rel="shortcut icon" type="logo.jpg" sizes="16x16" href="icon.png" />
+    <!--Swiper Css-->
+    <link rel="stylesheet" href="swiper-bundle.min.css" />
+    <!--link css with html-->
+    <link rel="stylesheet" href="birdpark.css" />
+    <!--link boxicons with html-->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!--import icon from fonawsome-->
+    <script src="https://kit.fontawesome.com/5d64caba1e.js"></script>
+  </head>
+  <body>
+    <!-- header Section (menu bar)-->
+    <header>
+      <img src="birdparadise-removebg-preview.png" alt="bird" />
+      <ul>
+        <li><a href="index.html">ZooPark</a></li>
+        <li><a href="birdpark.html">BirdPark</a></li>
+        <li>
+          <a>Events<i class="fas fa-caret-down"></i></a>
+          <ul class="dropdown">
+            <li><a href="zooParkEvent.html">ZooPark Events</a></li>
+            <li><a href="birdParkEvent.html">BirdPark Events</a></li>
+          </ul>
+        </li>
+        <li><a href="membership.html">Membership</a></li>
+      </ul>
+    </header>
+    <!-- Video Section with Header -->
+    <div class="mainindex">
+      <video autoplay muted loop id="video-background">
+        <source src="robin_-_21723 (540p).mp4" type="video/mp4" />
+      </video>
+      <!--welcome section(dont change)...................................................................................................-->
+      <div class="welcombar">
+        <h2>Welcome to The Jurong Bird Paradise, Singapore.</h2>
+      </div>
+      <!--login page below this line....................................................................................................-->
+      <div class="containerform">
+        <h1 class="labelform">Login Here</h1>
+        <form
+          class="login_form"
+          action="home.html"
+          method="post"
+          name="formlogin"
+          onsubmit="return validated()"
+        >
+          <div class="log">
+            <div class="font">Email or Phone</div>
+            <input autocomplete="off" type="text" name="email" />
+            <div id="email_error">Please fill up your Email or Phone</div>
+            <div class="font font2">Password</div>
+            <input type="password" name="password" />
+            <div id="pass_error">Please fill up your Password</div>
+            <button type="submit">Login</button>
+          </div>
+        </form>
+      </div>
+      <!-- Login Page HTML Code above this line(dont change)...........................................................................................-->
+    </div>
+
+    <!--section1 below this..........................-->
+    <div class="marquee">
+      <h1>
+        Exploring the Wonders of Singapore Bird Paradise: A Safari Adventure
+      </h1>
+    </div>
+    <div class="con1">
+      <div class="secondline">
+        <div class="why">
+          <h1>
+            Where Every Feather Tells a Story
+            <span><br />Book Your Adventure</span>
+          </h1>
+          <br />
+          <p>
+            Singapore Bird Paradise is a renowned aviary located within
+            <span>Jurong Bird Park, Singapore.</span> It is home to a diverse
+            array of bird species from all around the world, featuring lush
+            tropical landscapes and meticulously designed habitats that mimic
+            the natural environments of the birds. Visitors can immerse
+            themselves in the beauty of these feathered creatures while learning
+            about their behaviors, habitats, and conservation efforts. The park
+            offers various interactive exhibits, educational programs, and
+            engaging bird shows, making it an ideal destination for families,
+            nature enthusiasts, and bird lovers alike.
+          </p>
+        </div>
+        <!--first image on top of right hand side.......................................................................................-->
+        <div class="zooicon">
+          <img src="parrot.png" alt="parrot" />
+        </div>
+      </div>
+    </div>
+
+    <!--code for gallery below this line..................................................................................-->
+    <div class="wrapper2">
+      <h1>Image gallery</h1>
+      <div class="gallery">
+        <div class="image">
+          <img src="image01.png" alt="img1" />
+        </div>
+        <div class="image">
+          <img src="image02.png" alt="img1" />
+        </div>
+        <div class="image">
+          <img src="image03.png" alt="img1" />
+        </div>
+        <div class="image">
+          <img src="image04.png" alt="img1" />
+        </div>
+        <div class="image">
+          <img src="image05.png" alt="img1" />
+        </div>
+        <div class="image">
+          <img src="image06.png" alt="img1" />
+        </div>
+        <div class="image">
+          <img src="image07.png" alt="img1" />
+        </div>
+        <div class="image">
+          <img src="image08.png" alt="img1" />
+        </div>
+        <div class="image">
+          <img src="image09.png" alt="img1" />
+        </div>
+        <div class="image">
+          <img src="image10.jpg" alt="img1" />
+        </div>
+        <div class="image">
+          <img src="image11.jpg" alt="img1" />
+        </div>
+      </div>
+      <div class="popup-image">
+        <span>&times;</span>
+        <img src="image01.png" alt="ig" />
+      </div>
+    </div>
+    <script>
+      document.querySelectorAll(".gallery img").forEach((image) => {
+        image.onclick = () => {
+          document.querySelector(".popup-image").style.display = "block";
+          document.querySelector(".popup-image img").src =
+            image.getAttribute("src");
+        };
+      });
+      document.querySelector(".popup-image span").onclick = () => {
+        document.querySelector(".popup-image").style.display = "none";
+      };
+    </script>
+
+    <!--riview -->
+
+    <div class="reviews">
+      <div class="reviewbox">
+        <div class="topic">
+          <h1>
+            <span> Our Custermer feedback</span>
+          </h1>
+        </div>
+        <div class="border">
+          <section class="container">
+            <div class="testimonial mySwiper">
+              <div class="testi-content swiper-wrapper">
+                <div class="slide swiper-slide">
+                  <img src="men1.jpg" alt="" class="image" />
+                  <p>
+                    Bird Paradise in Singapore is truly a haven for bird
+                    enthusiasts. The vibrant array of avian species, coupled
+                    with well-maintained habitats, makes it a captivating
+                    experience. From the majestic parrots to the charming
+                    finches, each bird is showcased in its natural glory. The
+                    interactive elements allow visitors to engage with these
+                    beautiful creatures up close, creating unforgettable
+                    memories. It's a must-visit destination for anyone seeking a
+                    delightful immersion into the world of birds.
+                  </p>
+                  <i class="bx bxs-quote-alt-left quote-icon"></i>
+                  <div class="details1">
+                    <span class="name">Marnie Lotter</span>
+                    <span class="job">Engineer</span>
+                  </div>
+                </div>
+                <div class="slide swiper-slide">
+                  <img src="men2.jpg" alt="" class="image" />
+                  <p>
+                    Having visited Bird Paradise in Singapore, I can confidently
+                    say it's a bird lover's dream come true. The sheer variety
+                    of species, from striking parrots to delicate finches, is
+                    astounding. Each exhibit is thoughtfully designed, providing
+                    a glimpse into the natural habitats of these magnificent
+                    creatures. The interactive experiences, such as feeding
+                    sessions and bird shows, add an extra layer of excitement
+                    and engagement. It's an unforgettable experience that truly
+                    brings you closer to the beauty of nature.
+                  </p>
+                  <i class="bx bxs-quote-alt-left quote-icon"></i>
+                  <div class="details1">
+                    <span class="name">Author smith</span>
+                    <span class="job">Businessmen</span>
+                  </div>
+                </div>
+                <div class="slide swiper-slide">
+                  <img src="women3.jpg" alt="" class="image" />
+                  <p>
+                    My recent visit to Bird Paradise in Singapore left me in awe
+                    of the mesmerizing world of avian wonders. The immersive
+                    exhibits showcased an impressive variety of bird species,
+                    each more captivating than the last. From the graceful
+                    flight of colorful parrots to the playful antics of tiny
+                    finches, every moment was a delight for the senses. The
+                    interactive experiences, like feeding sessions and
+                    educational talks, provided valuable insights into the lives
+                    of these magnificent creatures. It's an experience I'll
+                    cherish forever, and I highly recommend it to fellow nature
+                    enthusiasts.
+                  </p>
+                  <i class="bx bxs-quote-alt-left quote-icon"></i>
+                  <div class="details1">
+                    <span class="name">Ming Hui</span>
+                    <span class="job">Marketing Executive</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <!--Swiper JS-->
+    <script src="swiper-bundle.min.js"></script>
+    <!--JavaScript-->
+    <script defer src="script.js"></script>
+
+    <!--Footer start (dont change below this line)........................................................................................................................-->
+    <footer>
+      <div class="row">
+        <div class="col">
+          <img
+            src="birdparadise-removebg-preview.png"
+            class="footerlogo"
+            alt="icon"
+          />
+          <p>
+            Discover the vibrant world of avian wonders at Singapore Bird Park.
+            Immerse yourself in the sights and sounds of over 600 species, as
+            you journey through lush habitats filled with captivating birds from
+            around the globe. From majestic eagles to colorful parrots, embark
+            on a captivating adventure where nature's beauty takes flight..
+          </p>
+        </div>
+        <div class="col">
+          <h2>OFFICE</h2>
+          <p>No.80</p>
+          <p>Mandai Lake Road, Singapore Zoo</p>
+          <p>729826</p>
+          <br />
+          <h3>Daily Opening Hours</h3>
+          <p>8:30am - 6:00pm (Last entry at 5:00pm)</p>
+          <br />
+          <i class="bx bx-envelope" style="color: #caced2"> Email</i>
+          <p>
+            <a href="Info.jbp@wrs.com.sg" style="color: #b3db8b"
+              >Info.jbp@wrs.com.sg
+            </a>
+          </p>
+        </div>
+        <div class="col">
+          <h2>LINKS</h2>
+          <ul>
+            <li><a href="index.html">ZooPark</a></li>
+            <li><a href="design.html">BirdPark</a></li>
+            <li><a href="service.html">Events</a></li>
+            <li><a href="about.html">Membership</a></li>
+            <li><a href="contact.html">Service</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <h2>NEWSLETTER</h2>
+          <form>
+            <i class="far fa-envelope"></i>
+            <input type="email" placeholder="Enter your email id:" required />
+            <button type="submit">
+              <i
+                class="fa-solid fa-arrow-right fa-lg"
+                style="color: #06e520"
+              ></i>
+            </button>
+          </form>
+
+          <div class="social-icons">
+            <a href="https://www.facebook.com/MandaiWildlifeReserve/"
+              ><i class="fa-brands fa-facebook" style="color: #098cf1"></i
+            ></a>
+            <a href="https://www.instagram.com/mandaiwildlifereserve/"
+              ><i class="fa-brands fa-instagram" style="color: #098cf1"></i
+            ></a>
+            <a href="https://www.tiktok.com/@mandaiwildlifereserve">
+              <i class="fa-brands fa-tiktok" style="color: #098cf1"></i
+            ></a>
+            <a href="https://www.youtube.com/c/MandaiWildlifeReserve">
+              <i class="fa-brands fa-youtube" style="color: #098cf1"></i
+            ></a>
+            <a href="https://twitter.com/MandaiWildlife"
+              ><i class="fa-brands fa-twitter" style="color: #098cf1"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <p class="copywrite">
+        © Copyright 2024, Niketha Senarath.. All Rights Reserved.<br />
+        All content on this website is the intellectual property of Niketha
+        Senarath. Unauthorized reproduction or distribution of any material
+        without explicit consent is strictly prohibited.
+      </p>
+    </footer>
+  </body>
+</html>

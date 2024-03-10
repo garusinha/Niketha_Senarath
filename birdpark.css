@@ -1,0 +1,496 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  box-sizing: border-box;
+}
+body {
+  min-height: 200vh;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  padding-left: 8px;
+  z-index: 100000;
+  font-weight: bold;
+  margin: auto;
+  background-color: rgba(0, 0, 0);
+}
+header.sticky {
+  padding: 5px 100px;
+  background: #8c998e;
+}
+/*drop down menu................................*/
+header ul li ul.dropdown li {
+  display: block;
+  font-size: 15px;
+  line-height: 25px;
+  padding-top: 20px;
+}
+header ul li ul.dropdown {
+  width: 200px;
+  background: #000;
+  position: absolute;
+  z-index: 999;
+  display: none;
+}
+header ul li:hover ul.dropdown {
+  display: block;
+}
+header img {
+  width: 150px;
+}
+header ul {
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 20px;
+}
+header ul li {
+  position: relative;
+  list-style: none;
+  font-size: 20px;
+}
+header ul li a:hover {
+  color: #ff7200;
+}
+header ul li a {
+  position: relative;
+  margin: 0 15px;
+  text-decoration: none;
+  color: #fff;
+  letter-spacing: 2px;
+  font-weight: 500px;
+  transition: 0.5s;
+}
+header.sticky ul li a {
+  color: #000;
+}
+/*marque below this line*/
+.marquee {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  background-color: #ffffff;
+  overflow: hidden;
+  position: relative;
+  height: 50px;
+  width: 100%;
+  /* Full width of its parent */
+  white-space: nowrap;
+  background-color: #8c998e;
+  font-weight: bold;
+}
+.marquee h1 {
+  position: absolute;
+  width: auto;
+  color: #ed1919;
+  height: 100%;
+  font-weight: 400;
+  margin: 0;
+  line-height: 50px;
+  text-align: center;
+  /* Start off the right edge */
+  transform: translateX(100%);
+  /* Animate to the left */
+  animation: scroll-left 20s linear infinite;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.mainindex {
+  width: 100%; /* Adjust width as needed */
+  height: 800px; /* Adjust height as needed */
+  position: relative;
+  padding-left: 0px;
+}
+.mainindex video {
+  max-width: 1480px;
+  width: 100%;
+  padding-left: 0;
+  align-content: center;
+  align-items: center;
+}
+#video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+/* login form.............................................................................................*/
+.containerform {
+  position: absolute;
+  margin-top: 150px;
+  width: 450px;
+  height: auto;
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 25px;
+  margin-left: 850px;
+}
+.labelform {
+  padding: 20px 130px;
+  font-size: 35px;
+  font-weight: bold;
+  color: #130f40;
+}
+.log {
+  display: flex;
+  flex-direction: column;
+}
+.login_form {
+  padding: 20px 40px;
+}
+.login_form .font {
+  font-size: 18px;
+  color: #130f40;
+  margin: 5px 0;
+}
+.login_form input {
+  height: 40px;
+  width: 350px;
+  padding: 0 5px;
+  font-size: 18px;
+  outline: none;
+  background-color: #ffffff;
+}
+.log button {
+  height: 45px;
+  width: 100px;
+  background-color: #cad5c3;
+  margin: 0 auto;
+  margin-top: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.log button:hover {
+  background: #f1f3f0;
+}
+.login_form #email_error,
+.login_form #pass_error {
+  margin-top: 5px;
+  width: 345px;
+  font-size: 18px;
+  color: #c62828;
+  background: rgb(255, 0, 0, 0.1);
+  text-align: center;
+  padding: 5px 8px;
+  border-radius: 3px;
+  border: 1px solid #ef9a9a;
+  display: none;
+}
+/*..............................................*/
+.welcombar {
+  display: flex; /* Use flexbox layout */
+  align-items: center; /* Align items vertically */
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 200;
+  font-size: 36px;
+  color: #f5f0ed;
+  background-position: center;
+  justify-content: center;
+  position: absolute;
+  padding-top: 700px;
+  padding-left: 50px;
+}
+.welcombar h2 {
+  font-weight: 600;
+}
+
+/*section1 below this..........................*/
+.con1 {
+  padding-left: 8px;
+  padding-top: 0;
+  margin: 0;
+}
+.secondline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.why {
+  width: 850px;
+  font-size: 17px;
+  margin: 0;
+  text-align: center;
+}
+.why span {
+  text-decoration: none;
+  color: #43a80a;
+  font-weight: 300;
+}
+.why h1 {
+  font-weight: 300;
+}
+.why p {
+  margin: 0;
+  color: #2b2626;
+  padding-top: 0px;
+  font-size: 18px;
+  text-align: justify;
+}
+.zooicon {
+  width: 400px;
+}
+.zooicon img {
+  width: 100%;
+}
+/*gallery below this.........................*/
+.wrapper2 {
+  position: relative;
+  min-height: 100vh;
+  background: #ddd;
+}
+.wrapper2 h1 {
+  font-size: 40px;
+  font-weight: normal;
+  padding: 15px;
+  color: #333;
+  text-align: center;
+  text-transform: capitalize;
+}
+.wrapper2 .gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  padding: 10px;
+}
+.wrapper2 .gallery .image {
+  height: 290px;
+  width: 200px;
+  border: 10px solid #fff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  cursor: pointer;
+}
+.wrapper2 .gallery .image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: 0.2s linear;
+}
+.wrapper2 .gallery .image:hover img {
+  transform: scale(1.1);
+}
+.wrapper2 .popup-image {
+  position: fixed;
+  top: 70px;
+  left: 0;
+  background: rgba(0, 0, 0, 0.9);
+  height: 90%;
+  width: 100%;
+  z-index: 100;
+  display: none;
+}
+.wrapper2 .popup-image span {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-size: 60px;
+  font-weight: bolder;
+  color: #fff;
+  cursor: pointer;
+  z-index: 100;
+}
+.wrapper2 .popup-image img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 5px solid #fff;
+  border-radius: 5px;
+  width: 450px;
+  object-fit: cover;
+}
+@media (max-width: 768px) {
+  .wrapper2 .popup-image img {
+    width: 100%;
+  }
+}
+/*review.....*/
+.reviews {
+  max-width: 1440px;
+  margin: auto;
+  background: #f1f1f1;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+}
+.reviewbox {
+  margin: auto;
+  overflow: hidden;
+}
+.topic h1 {
+  text-align: center;
+  padding-top: 20px;
+}
+.topic span {
+  color: #43a80a;
+  font-weight: bold;
+}
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.testimonial {
+  position: relative;
+  max-width: 900px;
+  width: 100%;
+  padding: 50px 0;
+  overflow: hidden;
+}
+.testimonial .image {
+  height: 170px;
+  width: 170px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.testimonial .slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 30px;
+}
+.slide p {
+  padding: 0 160px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  color: #333;
+}
+.slide .quote-icon {
+  font-size: 30px;
+  color: rgb(91, 91, 180);
+}
+.slide .details1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.details1 .name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+.details1 .job {
+  font-size: 12px;
+  font-weight: 400;
+  color: #333;
+}
+/*footer below this.........................*/
+footer {
+  width: 100%;
+  max-width: 1440px;
+  margin: auto;
+  align-items: center;
+  position: absolute;
+  bottom: auto;
+  background: linear-gradient(to right, #00093c, #2d0b00);
+  color: #fff;
+  padding: 50px 0 30px;
+  border-radius: 25px;
+  font-size: 13px;
+  line-height: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+.row {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.col {
+  text-align: justify;
+  width: 22%;
+  margin-left: 25px;
+}
+.footerlogo {
+  width: 150px;
+  margin-bottom: 0;
+}
+.col h2 {
+  width: fit-content;
+  margin-bottom: 40px;
+}
+ul li {
+  list-style: none;
+  margin-bottom: 12px;
+}
+ul li a {
+  text-decoration: none;
+  color: white;
+}
+form {
+  padding-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 50px;
+}
+form .far {
+  font-size: 18px;
+  margin-right: 10px;
+}
+form input {
+  width: 100%;
+  background: transparent;
+  color: #814d4d;
+  border: 0;
+  outline: none;
+}
+form button {
+  background: transparent;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+form button .fast {
+  font-size: 16px;
+  color: #ccc;
+}
+.social-icons .fa-brands {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  color: #000;
+  background: #f7f5f4;
+  margin-right: 10px;
+  cursor: pointer;
+}
+hr {
+  width: 90%;
+  border: 0;
+  border-bottom: 1px solid #ccc;
+  margin: 20px auto;
+}
+.copywrite {
+  text-align: center;
+}
