@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
 * {
   margin: 0;
   padding: 0;
@@ -8,13 +7,9 @@
   font-style: normal;
   box-sizing: border-box;
 }
-
 body {
   min-height: 200vh;
-  overflow-x: hidden;
-  background-color: #fff;
 }
-
 header {
   position: fixed;
   top: 0;
@@ -24,36 +19,37 @@ header {
   justify-content: center;
   align-items: center;
   transition: 0.5s;
-  padding: 8px;
+  padding-left: 8px;
   z-index: 100000;
   font-weight: bold;
-  background-color: rgba(0, 0, 0, 0.7); /* semi-transparent */
+  margin: auto;
+  background-color: rgba(0, 0, 0);
 }
-
 header.sticky {
   padding: 5px 100px;
   background: #8c998e;
 }
-
 header img {
   width: 150px;
 }
-
 header ul {
   font-family: Arial, Helvetica, sans-serif;
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   padding-left: 20px;
 }
-
 header ul li {
   position: relative;
   list-style: none;
   font-size: 20px;
 }
-
+header ul li a:hover {
+  color: #ff7200;
+}
 header ul li a {
+  position: relative;
   margin: 0 15px;
   text-decoration: none;
   color: #fff;
@@ -61,15 +57,16 @@ header ul li a {
   font-weight: 500px;
   transition: 0.5s;
 }
-
-header ul li a:hover {
-  color: #ff7200;
+header.sticky ul li a {
+  color: #000;
 }
-
-header ul li:hover ul.dropdown {
+/*drop down menu................................*/
+header ul li ul.dropdown li {
   display: block;
+  font-size: 15px;
+  line-height: 25px;
+  padding-top: 20px;
 }
-
 header ul li ul.dropdown {
   width: 200px;
   background: #000;
@@ -77,127 +74,85 @@ header ul li ul.dropdown {
   z-index: 999;
   display: none;
 }
-
-@media (max-width: 768px) {
-  header ul {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .containerform {
-    width: 80%; /* Adjust width for mobile view */
-    padding: 15px; 
-  }
-
-  .card-container {
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
-  }
-
-  .card {
-    width: 90%;
-    margin: 10px 0;
-  }
-
-  header img {
-    width: 120px;
-  }
-
-  header ul li {
-    font-size: 18px;
-  }
-
-  .namecont {
-    width: 90%;
-    margin-top: 20px;
-  }
-
-  .mainindex {
-    padding-left: 20px;
-  }
+header ul li:hover ul.dropdown {
+  display: block;
 }
 
 .mainindex {
-  width: 100%;
-  height: 100%;
+  width: 100%; /* Adjust width as needed */
+  height: 800px; /* Adjust height as needed */
   position: relative;
+  padding-left: 80px;
 }
-
 .mainindex video {
-  width: 100%;
-  height: 100vh;
+width: 100%;
+  height: 100%;
   object-fit: cover;
   position: absolute;
   top: 0;
   left: 0;
-  z-index: -1; /* Make sure video stays in the background */
+  z-index: -1; 
 }
-
+#video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+/* login form.............................................................................................*/
 .containerform {
   position: absolute;
-  margin: 0 auto;
-  width: 90%;
-  max-width: 400px;
+  margin-top: 150px;
+  width: 450px;
+  height: auto;
   background: rgba(247, 240, 240, 0.75);
   border-radius: 25px;
-  z-index: 10;
-  padding: 30px;
+  margin-left: 850px;
 }
-
 .labelform {
+  padding: 20px 130px;
   font-size: 35px;
   font-weight: bold;
   color: #130f40;
-  text-align: center;
 }
-
 .log {
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
-
 .login_form {
   padding: 20px 40px;
 }
-
 .login_form .font {
   font-size: 18px;
   color: #130f40;
   margin: 5px 0;
 }
-
 .login_form input {
   height: 40px;
-  width: 100%;
-  max-width: 350px;
+  width: 350px;
   padding: 0 5px;
   font-size: 18px;
   outline: none;
   background-color: #ffffff;
 }
-
 .log button {
   height: 45px;
   width: 100px;
   background-color: #cad5c3;
+  margin: 0 auto;
   margin-top: 10px;
   border-radius: 5px;
   font-weight: bold;
   cursor: pointer;
   transition: 0.5s;
 }
-
 .log button:hover {
   background: #f1f3f0;
 }
-
 .login_form #email_error,
 .login_form #pass_error {
   margin-top: 5px;
-  width: 100%;
-  max-width: 345px;
+  width: 345px;
   font-size: 18px;
   color: #c62828;
   background: rgb(255, 0, 0, 0.1);
@@ -207,74 +162,74 @@ header ul li ul.dropdown {
   border: 1px solid #ef9a9a;
   display: none;
 }
-
 .namecont {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  margin-top: 550px;
   width: 350px;
+  height: auto;
   background: rgba(247, 240, 240, 0.75);
   border-radius: 25px;
-  padding: 20px;
-  text-align: center;
-  z-index: 10;
+  margin-left: 85px;
+  padding-top: 10px;
 }
-
 .name1 {
   color: #130f40;
+  padding-left: 20px;
+  padding-bottom: 10px;
 }
-
 .name1 p {
   font-weight: bold;
 }
-
+/*why you should vist..... below this line code.....................................*/
 .con1 {
   padding-left: 8px;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
-
 .secondline {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
 .why {
   width: 950px;
   font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
   line-height: 55px;
   margin: 0;
 }
-
 .why span {
   text-decoration: none;
   color: #43a80a;
   font-weight: bold;
 }
-
 .why p {
   line-height: 30px;
+  width: 900px;
   font-size: 20px;
+  border-radius: 5px;
+  margin: 0;
   color: #2b2626;
 }
-
+.zooicon {
+  width: 300px;
+  margin-left: 0px; /* Adjust as needed */
+  margin-bottom: 50px;
+}
 .zooicon img {
   width: 120%;
-  margin-left: 0px;
 }
-
+/*facilities in zoo middle black color section....................*/
 .raw4 {
   width: 100%;
-  height: 290px;
+  height: 290px; /* Adjust height as needed */
   font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
   color: aliceblue;
   display: inline-flex;
   justify-content: center;
   background: linear-gradient(to right, #00093c, #2d0b00);
   margin: 20px;
 }
-
 .menu2 {
   display: inline-flex;
   justify-content: center;
@@ -282,7 +237,6 @@ header ul li ul.dropdown {
   margin-top: 20px;
   padding-top: 50px;
 }
-
 .inbox {
   margin: 30px;
   border-radius: 5%;
@@ -295,49 +249,55 @@ header ul li ul.dropdown {
   justify-content: center;
   align-items: center;
 }
-
 .inboxin img {
   width: 60px;
+  margin-left: 0px;
+  background-position: center;
 }
-
 .gallerybox h1 {
   text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 40px;
 }
-
 .gallerybox span {
   text-decoration: none;
   color: #43a80a;
   font-weight: bold;
 }
-
 .gallery {
-  width: 100%;
+  width: 1440px;
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
   padding-left: 60px;
 }
-
 .gallery div {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: auto auto auto;
   grid-gap: 20px;
   padding: 10px;
+  flex: none;
 }
-
 .gallery div img {
   width: 100%;
 }
-
+/*event section below this line........................................*/
+.cardevent {
+  margin-top: 40px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+.cardevent span {
+  text-decoration: none;
+  color: #43a80a;
+  font-weight: bold;
+}
 .card-container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   margin-top: 10px;
 }
-
 .card {
   width: 400px;
   background-color: #f7f5f4;
@@ -346,27 +306,22 @@ header ul li ul.dropdown {
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
   margin: 20px;
 }
-
 .card img {
   width: 100%;
   height: auto;
 }
-
 .card-content {
   padding: 16px;
 }
-
 .card-content h3 {
   font-size: 20px;
   margin-bottom: 8px;
 }
-
 .card-content p {
   color: #666;
   font-size: 16px;
   line-height: 1.3;
 }
-
 .btn2 {
   display: inline-block;
   padding: 8px 16px;
@@ -376,7 +331,6 @@ header ul li ul.dropdown {
   margin-top: 16px;
   font-size: 15px;
 }
-
 /* Review line below..............................*/
 .reviews {
   padding: 40px 0;
