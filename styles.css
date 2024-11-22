@@ -97,12 +97,12 @@ header ul li:hover ul.dropdown {
 /* login form.............................................................................................*/
 .containerform {
   position: absolute;
-  margin-top: 150px;
-  width: 450px;
+  margin: 0 auto;
+  width: 90%;
+  max-width: 400px;
   height: auto;
   background: rgba(247, 240, 240, 0.75);
   border-radius: 25px;
-  margin-left: 850px;
 }
 .labelform {
   padding: 20px 130px;
