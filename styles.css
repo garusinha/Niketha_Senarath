@@ -95,12 +95,13 @@ header ul li:hover ul.dropdown {
 
 .mainindex {
   width: 100%; /* Adjust width as needed */
-  height: 800px; /* Adjust height as needed */
+  height: auto; /* Adjust height as needed */
   position: relative;
   padding-left: 80px;
 }
 .mainindex video {
   width: 100%;
+  height: auto;
   padding-left: 0;
 }
 #video-background {
