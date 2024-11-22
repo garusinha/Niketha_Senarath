@@ -85,8 +85,7 @@ header ul li ul.dropdown {
   }
 
   .containerform {
-    width: 80%; /* Adjust width for mobile view */
-    padding: 15px; 
+    padding: 10px; 
   }
 
   .card-container {
