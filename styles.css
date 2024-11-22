@@ -10,8 +10,7 @@
 body {
   min-height: 200vh;
 }
-
-  header {
+header {
   position: fixed;
   top: 0;
   left: 0;
@@ -80,7 +79,8 @@ header ul li:hover ul.dropdown {
 }
 
 .mainindex {
-  width: 1440px; /* Adjust width as needed */
+  width: 100%; /* Adjust width as needed */
+  height: 800px; /* Adjust height as needed */
   position: relative;
   padding-left: 80px;
 }
@@ -260,7 +260,7 @@ header ul li:hover ul.dropdown {
   font-weight: bold;
 }
 .gallery {
-  width: 100%;
+  width: 1440px;
   display: flex;
   padding-left: 60px;
 }
@@ -462,7 +462,6 @@ hr {
   border: 0;
   border-bottom: 1px solid #ccc;
   margin: 20px auto;
-
 }
 .copywrite {
   text-align: center;
