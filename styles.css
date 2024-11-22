@@ -10,7 +10,8 @@
 body {
   min-height: 200vh;
 }
-header {
+@media(max-width: 768px){
+  header {
   position: fixed;
   top: 0;
   left: 0;
@@ -462,6 +463,7 @@ hr {
   border: 0;
   border-bottom: 1px solid #ccc;
   margin: 20px auto;
+}
 }
 .copywrite {
   text-align: center;
