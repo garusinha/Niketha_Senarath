@@ -260,7 +260,7 @@ header ul li:hover ul.dropdown {
   font-weight: bold;
 }
 .gallery {
-  width: 100hv;
+  width: 100%;
   display: flex;
   padding-left: 60px;
 }
