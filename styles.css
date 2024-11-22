@@ -85,7 +85,8 @@ header ul li ul.dropdown {
   }
 
   .containerform {
-    padding: 10px;
+    width: 80%; /* Adjust width for mobile view */
+    padding: 15px; 
   }
 
   .card-container {
@@ -121,11 +122,12 @@ header ul li ul.dropdown {
   width: 100%;
   height: 100vh;
   position: relative;
+  overflow: hidden;
 }
 
 .mainindex video {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   object-fit: cover;
   position: absolute;
   top: 0;
@@ -142,6 +144,8 @@ header ul li ul.dropdown {
   border-radius: 25px;
   z-index: 10;
   padding: 30px;
+  top: 50%; /* Center the form vertically */
+  transform: translateY(-50%);
 }
 
 .labelform {
