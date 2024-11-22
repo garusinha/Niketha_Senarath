@@ -80,8 +80,7 @@ header ul li:hover ul.dropdown {
 }
 
 .mainindex {
-  width: 100%; /* Adjust width as needed */
-  height: 800px; /* Adjust height as needed */
+  width: 1440px; /* Adjust width as needed */
   position: relative;
   padding-left: 80px;
 }
