@@ -10,6 +10,21 @@
 body {
   min-height: 200vh;
 }
+@media (max-width: 768px) {
+    header ul {
+        display: flex;
+        flex-direction: column; /* Stack menu items vertically */
+        align-items: center; /* Center menu items */
+    }
+
+    .containerform {
+        padding: 10px; /* Add padding for smaller screens */
+    }
+
+    .card-container {
+        flex-direction: column; /* Stack cards vertically */
+    }
+}
 header {
   position: fixed;
   top: 0;
